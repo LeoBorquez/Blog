@@ -7,11 +7,15 @@ class ArticlesController < ApplicationController
   def create
     #render plain: params[:article].inspect
     @article = Article.new(article_params)
-    @article.save
+    if @article.save
+      flash[:notice] = "Article created";
+      redirect_to article_path
+    else
+      render 'articles/new'
+    end
   end
 
   private
-
   def article_params
     params.require(:article).permit(:title, :description)
   end
