@@ -4,22 +4,6 @@
 
 
 
-<%= form_for @article do |f| %>
+<%= render 'articles/form' %>
 
-  <%= render 'shared/error_messages', object: f.object %>
-
-  <form>
-    <div>
-      <%= f.label :title %>
-      <%= f.text_field :title %>
-    </div>
-    <div>
-      <%= f.label :description %>
-      <%= f.text_area :description %>
-    </div>
-
-    <%= f.submit %>
-
-  </form>
-
-<% end %>
+<%= link_to 'Go back', articles_path %>
