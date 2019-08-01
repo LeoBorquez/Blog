@@ -7,6 +7,7 @@ $navbar-default-bg: #2A2727;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+  padding: 7px;
 }
 
 #logo:hover {
@@ -22,15 +23,45 @@ $navbar-default-bg: #2A2727;
   background-image: asset_url('bg_home.jpg');
   background-size: cover;
   height: 550px;
+
+  h1 {
+    color: #F7F7F7 !important;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+  }
 }
 
-.jumbotron h1 {
-  color: #F7F7F7 !important;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-}
 
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #666666;
+  color: #999999;
+
+  a {
+    color: grey;
+
+    &:hover {
+      color: darkgray;
+    }
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
