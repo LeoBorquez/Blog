@@ -1,0 +1,19 @@
+<%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+
+  <div class="row">
+    <div class="col-xs-12">
+
+      <%= render 'shared/error_messages', object: f.object %>
+
+
+
+<% end %>
+
+<div class="col-xs-4 col-xs-offset-4">
+  [ <%= link_to 'Back', articles_path %> ]
+</div>
+
+
+</div>
+</div>
+
