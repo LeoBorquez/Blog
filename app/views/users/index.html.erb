@@ -3,6 +3,7 @@
 <h1 align="center">All Blog users</h1>
 
 <div align="center">
+  <%= will_paginate %>
   <% @user.each do |user| %>
     <ul class="listinig">
       <div class="row">
@@ -16,5 +17,6 @@
       </div>
     </ul>
   <% end %>
+  <%= will_paginate %>
 </div>
 
