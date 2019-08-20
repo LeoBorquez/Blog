@@ -5,7 +5,7 @@ class CategoryTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  def setuo
+  def setup
     @category = Category.new(name: "sports")
   end
 
@@ -13,5 +13,9 @@ class CategoryTest < ActiveSupport::TestCase
     assert @category.valid?
   end
 
+  test "name should be present" do
+    @category.name = " "
+    assert_not @category.valid?
+  end
 
 end
