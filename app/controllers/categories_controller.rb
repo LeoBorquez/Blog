@@ -1,7 +1,15 @@
 class CategoriesController < ApplicationController
 
+  def index
+
+  end
+
   def new
-    o
+
+  end
+
+  def show
+
   end
 
 end
