@@ -5,6 +5,10 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
 
+  def setup
+    @category = Category.create(name: "sports")
+  end
+
   test "should get categories index" do
     get categories_path
     assert_response :success
@@ -16,7 +20,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "shoukd get show" do
-    get category_path
+    get category_path(@category)
     assert_response :success
   end
 
