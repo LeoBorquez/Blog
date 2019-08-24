@@ -7,12 +7,12 @@
     <database id="2" parent="1" name="development">
       <ObjectId>16386</ObjectId>
       <Owner>eLe</Owner>
-      <IntrospectionStateNumber>782</IntrospectionStateNumber>
+      <IntrospectionStateNumber>802</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|16404|16406|1
 sequence|table|16415|16417|1
 sequence|table|16427|16429|1
-sequence|table|16489|16491|1
+sequence|table|16505|16507|1
 </Relations>
     </database>
     <database id="3" parent="1" name="eLe">
@@ -104,7 +104,7 @@ sequence|table|16489|16491|1
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>783</IntrospectionStateNumber>
+      <IntrospectionStateNumber>803</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="19" parent="2" name="btree">
@@ -164,8 +164,8 @@ sequence|table|16489|16491|1
       <SchemaId>11</SchemaId>
     </extension>
     <sequence id="26" parent="18" name="article_categories_id_seq">
-      <ObjectId>16489</ObjectId>
-      <StateNumber>778</StateNumber>
+      <ObjectId>16505</ObjectId>
+      <StateNumber>797</StateNumber>
       <Owner>eLe</Owner>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
@@ -201,9 +201,9 @@ sequence|table|16489|16491|1
       <StateNumber>573</StateNumber>
     </table>
     <table id="31" parent="18" name="article_categories">
-      <ObjectId>16491</ObjectId>
+      <ObjectId>16507</ObjectId>
       <Owner>eLe</Owner>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
     </table>
     <table id="32" parent="18" name="articles">
       <ObjectId>16406</ObjectId>
@@ -270,46 +270,46 @@ sequence|table|16489|16491|1
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
       <DefaultExpression>nextval(&apos;article_categories_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
     <column id="43" parent="31" name="article_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="44" parent="31" name="category_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="45" parent="31" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <column id="46" parent="31" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>778</StateNumber>
+      <StateNumber>797</StateNumber>
       <TypeId>1114</TypeId>
     </column>
     <index id="47" parent="31" name="article_categories_pkey">
-      <ObjectId>16495</ObjectId>
-      <StateNumber>778</StateNumber>
+      <ObjectId>16511</ObjectId>
+      <StateNumber>797</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
     <key id="48" parent="31" name="article_categories_pkey">
-      <ObjectId>16496</ObjectId>
-      <StateNumber>778</StateNumber>
+      <ObjectId>16512</ObjectId>
+      <StateNumber>797</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>article_categories_pkey</UnderlyingIndexName>
